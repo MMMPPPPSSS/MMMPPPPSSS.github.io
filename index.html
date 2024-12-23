@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -34,12 +32,15 @@
         }
 
         .log-item {
+            display: block; /* 将其显示为块级元素 */
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             padding: 20px;
             transition: transform 0.3s ease;
+            text-decoration: none; /* 去掉下划线 */
+            color: inherit; /* 继承父元素的颜色 */
         }
 
         .log-item:hover {
@@ -97,16 +98,16 @@
 </header>
 
 <div class="container">
-            <div class="log-item">
-            <div class="log-title">第二天</div>
-            <div class="log-date">2024-12-22 22:34:13</div>
-            <div class="log-content">注册功能，数据返回加密功能，环境</div>
-        </div>
-            <div class="log-item">
-            <div class="log-title">第一天</div>
-            <div class="log-date">2024-12-21 22:32:26</div>
-            <div class="log-content">功能规划-数据库构造</div>
-        </div>
+    <a href="eid.html" class="log-item">
+        <div class="log-title">第二天</div>
+        <div class="log-date">2024-12-22 22:34:13</div>
+        <div class="log-content">注册功能，数据返回加密功能，环境</div>
+    </a>
+    <a href="#" class="log-item">
+        <div class="log-title">第一天</div>
+        <div class="log-date">2024-12-21 22:32:26</div>
+        <div class="log-content">功能规划-数据库构造</div>
+    </a>
     
     <!-- 添加分页（如有需要） -->
     <div class="pagination">
@@ -116,3 +117,6 @@
 </div>
 </body>
 </html>
+
+
+
