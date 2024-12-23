@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayTime</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .log-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .log-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .log-title {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+
+        .log-date {
+            font-size: 14px;
+            color: #888;
+            margin: 0 0 10px 0;
+        }
+
+        .log-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .log-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .pagination a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>开发日志</h1>
+</header>
+
+<div class="container">
+            <div class="log-item">
+            <div class="log-title">第二天</div>
+            <div class="log-date">2024-12-22 22:34:13</div>
+            <div class="log-content">注册功能，数据返回加密功能，环境</div>
+        </div>
+            <div class="log-item">
+            <div class="log-title">第一天</div>
+            <div class="log-date">2024-12-21 22:32:26</div>
+            <div class="log-content">功能规划-数据库构造</div>
+        </div>
+    
+    <!-- 添加分页（如有需要） -->
+    <div class="pagination">
+        <a href="#">« 上一页</a>
+        <a href="#">下一页 »</a>
+    </div>
+</div>
+</body>
+</html>
